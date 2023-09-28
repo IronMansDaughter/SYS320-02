@@ -2,9 +2,6 @@
 
 # Storyline: Extract IPs from emergingthreats.net and create a firewall ruleset
 
-# Regex to extract the networks
-# 5.  134.  128.  0/  19
-
 function create_badIPs() {
 
 	wget https://rules.emergingthreats.net/blockrules/emerging-drop.suricata.rules -O /tmp/emerging-drop.suricata.rules
@@ -38,8 +35,6 @@ function create_badIPs() {
 			create_badIPs
 		fi
 
-# Creating switches. Based on their selection, create an inbound drop rule for the respective firewall. (DELIVERABLE 2)
-# Switches for IPTables (I), Cisco (C), Netscreen (N), Windows Firewall (F), and Mac OS X (M). Also Parse TargetedThreats file (P)
 while getopts 'icnfmp' OPTION ; do
 
 	case "$OPTION" in
@@ -72,7 +67,7 @@ then
 	echo "Created IPTables firewall drop rules in file \"badips.iptables\""
 fi
 
-# Cisco
+# Cisco thingy ma bobber
 if [[ ${cisco} ]]
 then
 	egrep -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.0' badips.txt | tee badips.nocidr
