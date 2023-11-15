@@ -1,0 +1,10 @@
+4. What was the toughest part of this task, and how did you handle it?
+
+The most challenging part was putting together different PowerShell commands smoothly to collect all the data and figuring out the best choices for the 4 artifacts. To overcome this, I looked into
+PowerShell documentation and online questionares that allowed me to learn more. Also youtube is super helpful for tutorials and gaining a better understanding of scripting in general. 
+
+
+5. What did you enjoy the most about this task, and why?
+
+Creating a PowerShell script to automate data retrieval, incorporating file hashing and archiving, and explaining the cmdlet choices provided hands-on experience and I'll be able to reuse this script
+later in life to make my life a bit easier since everything is automated. I really love the fact that the information we are learning in class will actually be useful after college.
